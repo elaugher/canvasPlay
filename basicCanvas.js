@@ -107,7 +107,7 @@ const baseSpeed = 1.5;
 
 function init(){
     circleArr = [];
-    for (let i=0; i < 700; i++){
+    for (let i=0; i < 900; i++){
         r = randomIntInlc(2,5);
         x = randomFloat(r,innerWidth-r);
         y = randomFloat(r,innerHeight-r);
