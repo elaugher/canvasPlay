@@ -19,12 +19,12 @@ submitBtn.addEventListener("click", function(){
             text3.textContent = "Longitude: " + position.coords.longitude;
             submitBtn.textContent = "Thank you for your cooperation citizen";
 
-            let latlon = position.coords.latitude+","+position.coords.longitude;
+            //let latlon = position.coords.latitude+","+position.coords.longitude;
 
-            let imgUrl = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon;
-            imgUrl += "&zoom=14&size=300x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+            //let imgUrl = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon;
+            //imgUrl += "&zoom=14&size=300x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
 
-            text4.innerHTML = "<img src='"+imgUrl+ "'>";
+            //text4.innerHTML = "<img src='"+imgUrl+ "'>";
             //console.log(imgUrl);
             //console.log(text4.innerHTML);
 
