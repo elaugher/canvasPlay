@@ -1,0 +1,45 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: url("images/webb.png") repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 90px;
+}
+
+#content-wrapper{
+    height: 500px;
+    width: 500px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    display: block;
+    text-align: center;
+}
+
+#text-wrapper{
+    display: block;
+    text-align: center;
+}
+
+#nsaLogo {
+    width: 300px;
+    margin: 20px 0;
+}
+
+#geo-button {
+    background-color: #487fa8;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: large;
+    border-radius: 50px;
+}
+
+#geo-button:hover {
+    background-color: cornflowerblue;
+}
