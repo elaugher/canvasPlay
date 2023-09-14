@@ -39,6 +39,7 @@ window.onload = function (){
 
 function updateCanvas(){
     if(gameOver){
+        location.reload();
         return;
     }
 
@@ -82,7 +83,6 @@ function updateCanvas(){
         if(snakeX === snakeBody[i][0] && snakeY === snakeBody[i][1]){
             gameOver = true;
             alert("Game Over! Your Score: " + snakeBody.length);
-            break;
         }
     }
     
