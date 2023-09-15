@@ -5,6 +5,8 @@ const blockSize = 25;
 const rows = 20;
 const columns = 20;
 const scoreBoard = document.getElementById("score-counter");
+let hiScore = 0;
+const hiScoreBoard = document.getElementById("hiscore-counter");
 
 let canvas;
 let context;
@@ -26,6 +28,15 @@ let gameOver = false;
 
 
 window.onload = function (){
+    //high score system
+    if (typeof(Storage) !== "undefined"){
+        if(localStorage.getItem("basicSnakeGameHiScore")){
+            hiScore = parseInt(localStorage.getItem("basicSnakeGameHiScore"));
+            hiScoreBoard.textContent =  hiScore;
+
+        }
+    }
+
     canvas = document.getElementById("game-area");
     canvas.height = rows*blockSize;
     canvas.width = columns*blockSize;
@@ -39,6 +50,10 @@ window.onload = function (){
 
 function updateCanvas(){
     if(gameOver){
+        if (snakeBody.length > hiScore){
+            localStorage.setItem("basicSnakeGameHiScore", snakeBody.length);
+        }
+
         location.reload();
         return;
     }
